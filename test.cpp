@@ -8,6 +8,8 @@ int main() {
     std::cout << "5 - 3 = " << subtract(5, 3) << "\n";
     std::cout << "5 * 3 = " << multiply(5, 3) << "\n";
     std::cout << "5 / 3 = " << divide(5, 3) << "\n";
+
+    std::cout << "10 / 0 = " << divide(10, 0) << "\n";
     
     std::cout << "Factorial of 5 = " << factorial(5) << "\n";
     std::cout << "GCD of 48 and 18 = " << gcd(48, 18) << "\n";

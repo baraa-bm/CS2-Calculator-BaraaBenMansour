@@ -2,11 +2,19 @@
 #include <cstdlib> // for rand()
 #include <ctime>   // for time()
 #include <algorithm> // for min/max
+#include <cmath>
+
 
 double add(double a, double b) { return a + b; }
 double subtract(double a, double b) { return a - b; }
 double multiply(double a, double b) { return a * b; }
-double divide(double a, double b) { return b != 0 ? a / b : 0; }
+
+
+
+double divide(double a, double b) {
+    return b != 0 ? a / b : NAN;
+}
+
 double power(double base, double exponent) {
     if (exponent == 0) return 1;
     if (base == 0 && exponent < 0) return 0; // Undefined, but return 0
